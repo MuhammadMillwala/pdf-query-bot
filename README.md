@@ -24,33 +24,34 @@ A simple chatbot built to process PDF documents and answer queries based on the 
    ```bash
    git clone https://github.com/MuhammadMillwala/pdf-query-bot.git
 
-	2.	Navigate to the project directory:
+2.	Navigate to the project directory:
 
-cd pdf-chatbot
-
-
-	3.	Set up a virtual environment (optional but recommended):
-
-python3 -m venv venv
-source venv/bin/activate  # For macOS/Linux
-venv\Scripts\activate     # For Windows
+		cd pdf-chatbot
 
 
-	4.	Install the required dependencies:
+3.	Set up a virtual environment (optional but recommended):
 
-pip install -r requirements.txt
-
-
-	5.	Run the backend server:
-
-uvicorn main:app --reload
+		python3 -m venv venv
+		source venv/bin/activate  # For macOS/Linux
+		venv\Scripts\activate     # For Windows
 
 
-	6.	Open your browser and visit http://127.0.0.1:8000 to interact with the chatbot.
+4.	Install the required dependencies:
+
+		pip install -r requirements.txt
+
+
+5.	Run the backend server:
+	
+		uvicorn main:app --reload
+
+
+6.	Open your browser and visit http://127.0.0.1:8000 to interact with the chatbot.
+
 
 Usage
 	1.	Upload a PDF: Select a PDF file to upload using the “Upload PDF” button.
-	2.	Ask a Question: Once the PDF is uploaded, you can type a query in the text input box and press “Send”. The bot will process the query and return a relevant response from the PDF content.
+	2.	Ask a Question: Once the PDF is uploaded, you can type a query in the text input box and press “Send”. The bot will process the query and return a relevant response from 		the PDF content.
 	3.	Bot Responses: The chatbot will display the answers on the left side and your messages will appear on the right.
 
 
@@ -67,6 +68,7 @@ License
 This project is open-source and available under the MIT License.
 
 Acknowledgements
+
 	•	Cohere: Used for natural language processing and generating responses.
 	•	Qdrant: Used for similarity search on the PDF content.
 	•	Langchain: For handling language models and embeddings.
