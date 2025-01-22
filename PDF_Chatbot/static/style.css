@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chatbot container */
+.chat-container {
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    align-self: flex-start; 
+}
+
+/* Header */
+.chat-header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.chat-header p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Chat body */
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot-message {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+    max-width: 80%;
+}
+
+/* Footer */
+.chat-footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide the input */
+input[type="file"] {
+    display: none;
+}
+
+/* Label styled as a button */
+label.upload-btn {
+    background-color: #6a82fb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+label.upload-btn:hover {
+    background-color: #5d6dfb;
+}
+
+label.upload-btn:focus {
+    outline: none;
+}
+
+/* Text input container styles */
+.text-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text input field */
+#chat-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+/* Send button */
+#send-message-btn {
+    background-color: #6a82fb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#send-message-btn:hover {
+    background-color: #5d6dfb;
+}
