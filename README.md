@@ -53,16 +53,6 @@ Usage
 	2.	Ask a Question: Once the PDF is uploaded, you can type a query in the text input box and press “Send”. The bot will process the query and return a relevant response from the PDF content.
 	3.	Bot Responses: The chatbot will display the answers on the left side and your messages will appear on the right.
 
-Folder Structure
-
-/pdf-chatbot
-│
-├── main.py            # FastAPI backend server
-├── static/
-│   ├── style.css      # CSS for styling the frontend
-│   └── script.js      # JavaScript for interactivity
-└── templates/
-    └── index.html     # Frontend HTML template
 
 Customization
 	•	You can modify the query_pdf function to adjust how the chatbot handles the PDF content, performs searches, and generates responses.
@@ -80,12 +70,3 @@ Acknowledgements
 	•	Cohere: Used for natural language processing and generating responses.
 	•	Qdrant: Used for similarity search on the PDF content.
 	•	Langchain: For handling language models and embeddings.
-
-Contact
-
-For any questions or suggestions, feel free to reach out to your-email@example.com.
-
-### Notes:
-- Replace `your-username` with your actual GitHub username.
-- Ensure that the `requirements.txt` file is up-to-date with the necessary dependencies.
-- You may want to update the sections on customization and contributing as you evolve the project.
