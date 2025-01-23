@@ -1,0 +1,16 @@
+aiohttp==3.11.11
+beautifulsoup4==4.12.3
+cohere==5.13.11
+fastapi==0.115.6
+langchain==0.3.14
+langchain-cohere==0.3.5
+langchain-qdrant==0.2.0
+langchain-text-splitters==0.3.5
+pandas==2.2.2
+PyPDF2==3.0.1
+qdrant-client==1.13.0
+requests==2.32.0
+sentence-transformers==3.3.1
+torch==2.5.1
+transformers==4.48.0
+uvicorn==0.34.0
