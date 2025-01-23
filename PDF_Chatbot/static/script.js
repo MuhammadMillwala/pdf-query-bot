@@ -50,7 +50,7 @@ document.getElementById("pdf-file").addEventListener("change", async function ()
         if (response.ok) {
             const result = await response.json();
             const successMessage = document.createElement("div");
-            successMessage.className = "bot-message";
+            successMessage.className = "success-message";
             successMessage.textContent = result.message;
             chatBody.appendChild(successMessage);
             const fileInput = document.getElementById('pdf-file');
@@ -79,6 +79,10 @@ async function sendMessage(){
     const successMessageSelector = document.querySelector('#pdf-success-message');
     successMessageSelector.style.display = 'none';
     const chatBody = document.getElementById("chat-body");
+    const successMessage = chatBody.querySelector(".success-message");
+    if (successMessage) {
+        successMessage.remove();
+    }
     chatBody.style.alignItems = 'start';
     chatBody.style.justifyContent = 'start';
     const chatInput = document.getElementById("chat-input");

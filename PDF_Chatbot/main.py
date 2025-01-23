@@ -95,7 +95,7 @@ async def upload_pdf(file: UploadFile = File(...)):
         text += page.extract_text()
 
     # Split the text into chunks using LangChain's text splitter
-    splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    splitter = CharacterTextSplitter(chunk_size=250, chunk_overlap=50)
     chunks = splitter.split_text(text)
 
     # Generate embeddings for the text chunks
