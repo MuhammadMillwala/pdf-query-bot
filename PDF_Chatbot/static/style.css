@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    align-self: flex-start; 
+    align-self: center; 
 }
 
 /* Header */
@@ -111,7 +111,7 @@ label.upload-btn:focus {
 
 /* Text input container styles */
 .text-input-container {
-    display: flex;
+    display: none;
     align-items: center;
     margin-top: 10px;
     background-color: #ffffff;
@@ -147,3 +147,4 @@ label.upload-btn:focus {
 #send-message-btn:hover {
     background-color: #5d6dfb;
 }
+

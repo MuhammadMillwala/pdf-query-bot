@@ -14,13 +14,14 @@
         </div>
         <div class="chat-body" id="chat-body">
             <div class="bot-message">Hi there! Upload a PDF file, and I'll process it for you.</div>
-        </div>
-        <div class="chat-footer">
             <form id="upload-form">
                 <label for="pdf-file" class="upload-btn">Upload PDF</label>
                 <input type="file" id="pdf-file" accept="application/pdf">
             </form>
-            <div class="text-input-container">
+            <div id="pdf-success-message" style="display: none;">Your file has been uploaded successfully!</div>
+        </div>
+        <div class="chat-footer">
+            <div class="text-input-container" >
                 <input type="text" id="chat-input" placeholder="Type your message here..." />
                 <button id="send-message-btn" type="button">Send</button>
             </div>
